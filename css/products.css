@@ -66,3 +66,31 @@
 .product-box .off.hidden{
     visibility: hidden;
 }
+
+.pagi{
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+}
+.pagi li{
+    display: inline-block;
+}
+
+.pagi li a{
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.pagi li a.active{
+    background-color: #081837;
+    color: white;
+}
+
+.pagi li a:hover{
+    background-color: #081837;
+    color: white;
+}
