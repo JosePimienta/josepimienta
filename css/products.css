@@ -1,0 +1,68 @@
+.title_p{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.search_i{
+    float: left;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid red;
+    outline: 0;
+}
+
+.select{
+    float: right;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.product-box{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.product-box:hover{
+    text-decoration: none;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-box{
+    transition: all 0.3s;
+}
+
+.product-box img{
+    height: 300px;
+    white-space: nowrap;
+    image-resolution: ellipsis;
+    transition: all 0.3s;
+}
+
+
+.product-box:hover img{
+    transform: scale(1.05);
+    
+}
+
+.product-box h3{
+    font-size: 14px;
+    font-weight: normal;
+    margin: 5px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product-box .off{
+    color: red;
+    font-weight: bold;
+}
+
+.product-box .off.hidden{
+    visibility: hidden;
+}
