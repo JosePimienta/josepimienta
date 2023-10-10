@@ -1,5 +1,15 @@
 .title_p{
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    
+    /* font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Signika Negative', sans-serif; */
+
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+
     text-align: center;
 }
 
@@ -18,6 +28,69 @@
     border: 0;
     outline: 0;
     cursor: pointer;
+    
+}
+
+/* .barra_select{
+    width: 100px;
+    border: 2px solid blueviolet;
+} */
+
+.caja{
+    float: inherit;
+    border: 1px solid blue;
+    width: 30%;
+    text-align: left;
+    
+}
+
+.m_select{
+    background-color: orange;
+    padding: 10px;
+    height: 40px;
+     
+}
+
+.m_select::after{
+    /* content: '\25BC'; */
+    /* content: '\02C5'; */
+    content: '\1401';
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    
+    /* padding: 2px 2px 0px 2px;
+    height: 30px; */
+    /* background-color: red; */
+    float: right;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+.sel{
+    list-style: none;
+    padding: 0;
+    background-color: purple;
+    margin: 0;
+    
+}
+
+.sel li{
+    border: 1px solid red;
+    padding: 5px;
+    text-align: left;
+    
+}
+
+.sel li:hover{
+    cursor: pointer;
+    background-color: aqua;
+    
+    
+}
+
+.m_select:hover::after{
+    content: '\1403';
 }
 
 /* .img_doble {

@@ -1,28 +1,43 @@
-#name_t{
+/* #name_t{
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
     margin: 0px;
     padding: 2px;
     color: cornflowerblue;
-}
+} */
 
 #menu{
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 20px;
     text-align: center;
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    
 }
 
 #menu li a{
     display: block;
     padding: 5px;
     margin-bottom: 7px;
+    /* color: rgb(4, 4, 4); */
 }
 
 #menu li a.active{
     color: var(--color-gray);
     text-decoration: underline;
 }
+
+#menu li a:hover{
+background-color: #7b7a7ae2;
+/* color: var(--color-primary); */
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+
 
 /*para pc*/
 @media only screen and (min-width: 768px) {
