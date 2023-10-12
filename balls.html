@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h2 {
+  text-align: center;
+}
+
+.box {
+  background: goldenrod;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  transition: all 2s linear;
+  display: block;
+}
+
+.hi {
+  display: none;
+  opacity: 0;
+}
+
+/* button {
+  display: block;
+  margin: 0 auto;
+} */
+
+code {
+  color: firebrick;
+}
+    </style>
 </head>
 <body>
-    <h1>hoolasssss</h1>
+    <h2>Trying to Animate to <code>display:none</code></h2>
+    <ul id="box" class="box"><li>a</li></ul>
+
+  
+<div id="bo">TOGGLE VISIBILITY</div>
+
+
+<div id="m">Selecciona una opción</div>
+<ul id="s" style="display: none;">
+  <li>Opción 1</li>
+  <li>Opción 2</li>
+  <li>Opción 3</li>
+</ul>
+
+<script>let box = document.getElementById('box'),
+    btn = document.getElementById('bo');
+
+btn.addEventListener('click', function () {
+  box.classList.toggle('hi');
+}, false);
+
+
+</script>
+
+<script src="js/script.js"></script>
 </body>
 </html>

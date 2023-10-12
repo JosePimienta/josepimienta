@@ -1,3 +1,4 @@
+/* ESTILOS PARA TODOS LOS FOOTERS DEL PROYECTO */
 footer{
     background-color: rgba(100, 148, 237, 0.482);
     text-align: center;
@@ -5,12 +6,13 @@ footer{
     margin: 0;
 }
 
+/* tamaño y color de todos los iconos del footer */
 .icon-f{
     height: 150px;
     color: black;
 }
 
-.pp{
+/* quitar margenes a todos los textos de footer */
+.tex-ic{
     margin: 0;
-  
 }

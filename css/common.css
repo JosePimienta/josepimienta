@@ -1,7 +1,9 @@
+/* estilos comunes para todas las paginas del proyecto */
 *{
     box-sizing: border-box;
 }
 
+/* cambar tipo de letra y color de fondo de todas las paginas del proyecto */
 html, body{
     margin: 0;
     padding: 0;
@@ -11,11 +13,13 @@ html, body{
     background-color: #F0F0F0;
 }
 
+/* darle a todas las etiquetas a el mismo estilo */
 a{
     color: var(--color-primary);
     text-decoration: none;
 }
 
+/* darle a todas las etiquetas a el mismo estilo al hacer hover */
 a:hover{
     color: var(--color-primary-dark);
     text-decoration: underline;

@@ -1,20 +1,27 @@
+/* CREAR DIVISIONES DE PANTALLA COMUNES PARA TODAS LAS PAGINAS */
+
+/* tamaño maximo del contenedor */
 .container{
     max-width: 1500px;
     margin: 0 auto;
 }
 
+/* para ajustes de elementos flotantes dentro del contenedos */
 .row::after{
     content: "";
     clear: both;
     display: table;
 }
 
+/* se utiliza para editar todas las clases que comiencen con "col." */
 [class*="col-"]{
     float: left;
     padding: 10px;
     width: 100%;
 }
 
+/* CREACION DE MEDIA QUERYS PARA LOS DIFERENTES TAMAÑOS DE PANTALLA
+estos valores se dan en diviciones de columnas sumando cada columna a la anterior hasta llegar al 100% */
 /*para celulares*/
 @media only screen and (max-width: 600px) {
     .col-cl-1{
@@ -52,6 +59,9 @@
     }
     .col-cl-12{
         width: 100%;
+    }
+    .sel{
+        width: 27.75%;
     }
 }
 
@@ -92,6 +102,9 @@
     }
     .col-tb-12{
         width: 100%;
+    }
+    .sel{
+        width: 28.5%;
     }
     
 }
@@ -135,6 +148,9 @@
     .col-pc-12{
         width: 100%;
     }    
+    .sel{
+        width: 23.75%;
+    }
 }
 
 /*para escritorio*/
@@ -174,7 +190,10 @@
     }
     .col-es-12{
         width: 100%;
-    }    
+    }  
+    .sel{
+        width: 16.5%;
+    }  
 }
 
 /*para escritorio mas grnades*/
@@ -215,4 +234,7 @@
     .col-es2-12{
         width: 100%;
     }    
+    .sel{
+        width: 16.5%;
+    }
 }

@@ -1,11 +1,6 @@
-/* #name_t{
-    font-family: 'Dancing Script', cursive;
-    font-size: 50px;
-    margin: 0px;
-    padding: 2px;
-    color: cornflowerblue;
-} */
+/* MENU DE LA PAGINA */
 
+/* dar estilos a los diferentes itens del menu */
 #menu{
     list-style: none;
     padding: 0;
@@ -38,7 +33,7 @@ text-decoration: none;
 }
 
 
-
+/* solo cuando la pantalla tenga el tamaño minimo de 768px alinear el texto a la izquierda */
 /*para pc*/
 @media only screen and (min-width: 768px) {
     #menu{

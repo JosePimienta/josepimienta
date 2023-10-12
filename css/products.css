@@ -1,3 +1,6 @@
+/* ESTILOS PARA LA PARTE DE LOS PRODUCTOS */
+
+/* fuente y alinineado del titulo de los productos */
 .title_p{
     /* font-family: 'Dancing Script', cursive; */
     /* font-family: 'Oswald', sans-serif; */
@@ -13,6 +16,7 @@
     text-align: center;
 }
 
+/* buscador */
 .search_i{
     float: left;
     padding: 10px;
@@ -20,97 +24,91 @@
     border: none;
     border-bottom: 1px solid red;
     outline: 0;
+    /* font-size: 16px; */
 }
 
-.select{
+/* editar las parte de select */
+/* div que contiene todo el select */
+.caja{    
     float: right;
-    padding: 10px;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    
-}
-
-/* .barra_select{
-    width: 100px;
-    border: 2px solid blueviolet;
-} */
-
-.caja{
-    float: inherit;
-    border: 1px solid blue;
+    font-size: 14px;
+    /* border: 1px solid blue; */
     width: 30%;
     text-align: left;
-    
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
 }
 
+
 .m_select{
-    background-color: orange;
+    margin-bottom: 0px;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
-    height: 40px;
-     
+    /* height: 40px; */
+    border-radius: 2px;
+    /* background-color: orange; */
 }
 
 .m_select::after{
-    /* content: '\25BC'; */
-    /* content: '\02C5'; */
     content: '\1401';
-    /* position: absolute; */
     top: 0;
     right: 0;
-    
-    /* padding: 2px 2px 0px 2px;
-    height: 30px; */
-    /* background-color: red; */
     float: right;
     cursor: pointer;
-    /* border: 1px solid black; */
 }
 
+
+/* opciones interactivas del select. */
 .sel{
+    display: none; /* para que no salgan las opciones si no hasta que se oprima en la caja */
+    position: absolute; /* posicion fija en la pantalla */
+    z-index: 1;/* mostrar siempre sobre todo lo demas */
     list-style: none;
     padding: 0;
-    background-color: purple;
+    background-color: rgb(255, 255, 255);
     margin: 0;
-    
+    border-radius: 2px;
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.75);
+    border: 1px solid rgba(0, 0, 0, 0.614);
 }
 
 .sel li{
-    border: 1px solid red;
     padding: 5px;
     text-align: left;
-    
+}
+
+.m_select:hover{
+    cursor: pointer;
+    display: block;
 }
 
 .sel li:hover{
     cursor: pointer;
-    background-color: aqua;
-    
-    
+    background-color: rgba(138, 133, 133, 0.178);
+    color: black;  
+}
+
+.sel a{
+    text-decoration: none;
 }
 
 .m_select:hover::after{
     content: '\1403';
 }
 
-/* .img_doble {
-    position: relative; 
-  }
-  
-.img_doble #aa {
-    position: absolute;
-} */
-
-
+/* caja que contiene todos los productos */
 .product-box{
-
     position: relative; 
+    /* z-index: 0; */
     text-align: center;
     color: black;
     text-decoration: none;
+    border: 1px solid rgb(217, 15, 15);
 }
 
-.product-box #top{
+/* para intercambi de imagen al hacer hover */
+.product-box .top{
     position: absolute;
     width: 95%;
 }
@@ -120,9 +118,9 @@
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* animacion al hacer hover */
 .product-box{
-    transition: all 0.3s;
-    
+    transition: all 0.3s; 
 }
 
 .product-box img{
@@ -133,12 +131,12 @@
     transition: opacity 0.2s ease-in-out;
 }
 
-
+/* animacion de la imagen al hacer hover */
 .product-box:hover img{
     transform: scale(1.05);
-    
 }
 
+/* poner transparente la imagen de arriba para poder visualizar la del fondo */
 .product-box:hover img#top{
     opacity: 0;
 }
@@ -156,8 +154,10 @@
 .product-box .off{
     color: red;
     font-weight: bold;
+    
 }
 
+/* para los productos en oferta */
 .product-box .off.hidden{
     visibility: hidden;
 }
@@ -166,11 +166,13 @@
     font-size: 13px;
 }
 
+/* numero de pagina */
 .pagi{
     text-align: center;
     list-style: none;
     font-size: 18px;
 }
+
 .pagi li{
     display: inline-block;
 }
@@ -184,6 +186,7 @@
     text-decoration: none;
 }
 
+/* para saber que pagina se está visualizando */
 .pagi li a.active{
     background-color: #081837;
     color: white;

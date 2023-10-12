@@ -1,12 +1,15 @@
+/* DISEÑO DEL APARTE QUE CONTIENE LOS ICONOS DE INTERACCIÓN CON EL USUARIO*/
 aside{
-    text-align: center;
+    text-align: center; /* alinear texto en el centro */
     padding: 10px;
 }
 
+/* darle un margen de 20px a la parte inferior de las etiquetas a */
 aside a{
     margin-bottom: 20px;
 }
 
+/* quitar todos los margenes de la etiqueta p */
 aside p{
     margin: 0;
 }
