@@ -2,26 +2,33 @@
 
 <div class="row">
     <div class="col-cl-12">
-
+<!-- form para busqueda -->
         <form>
             <input class="search_i" type="search" name="search" placeholder="Busca el articulo">
         </form>
 
-        <select class="select">
-            <option>Precio mas bajo</option>
-            <option>Precio mas alto</option>
-            <option>Más popular</option>
-            <option>Descuento</option> 
-        </select>
+        <!-- caja de select para las diferentes opciones. Se realizó de esta manera para editar facilmente con css -->
+        <div class="caja">
+            <div class="m_select" id="m_select">Filtrar</div>
+            <ul class="sel" id="sel">
+                <a href="#"><li>Precio mas bajo</li></a>
+                <a href="#"><li>Precio mas alto</li></a>
+                <a href="#"><li>Más popular</li></a>
+                <a href="#"><li>Descuento</li></a>
+
+            </ul> 
+            
+        </div>
     </div>
 </div>
 
 <div class="row">
-
+<!-- se ingresan las imagenes de cada producto con su nombre, precio, oferta (si aplica)
+a cada una se le da un tamaño aproximado dependiendo del tamaño de la pantalla -->
     <a href="#" class="col-tb-6 col-pc-4 product-box">
         <!-- <img src="img/t-shiert/t1.jpeg" alt="jersey" width="100%"> -->
-        <img id="top" src="img/t-shiert/t1.jpeg"/>
-        <img src="img/t-shiert/t1_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t1.jpeg"/> <!-- imagen que se cambiará al hacer hover -->
+        <img src="img/t-shirt/t1_r.jpeg" width="100%" /> <!-- imagen que aparece antes del hover -->
         <div class="hidden off">OFERTA</div>
             <h3>Houston Astros 2023</h3>
             <strong class="price">$50.000</strong> 
@@ -29,8 +36,8 @@
 
     <a href="#" class="col-tb-6 col-pc-4 product-box img_doble">
         <!-- <img src="img/t-shiert/t2.jpeg" alt="jersey" width="100%"> -->
-        <img id="top" src="img/t-shiert/t2.jpeg" width="100%"/>
-        <img src="img/t-shiert/t2_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t2.jpeg" width="100%"/>
+        <img src="img/t-shirt/t2_r.jpeg" width="100%" />
         <div class="off">OFERTA</div>
             <h3>Houston Astros 2023</h3>
             <strong class="price"><del>$80.000</del>$65.000</strong> 
@@ -38,8 +45,8 @@
 
     <a href="#" class="col-tb-6 col-pc-4 product-box img_doble">
         <!-- <img src="img/t-shiert/t3.jpeg" alt="t-shiert" width="100%"> -->
-        <img id="top" src="img/t-shiert/t3.jpeg" width="100%"/>
-        <img src="img/t-shiert/t3_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t3.jpeg" width="100%"/>
+        <img src="img/t-shirt/t3_r.jpeg" width="100%" />
         <div class="off">OFERTA</div>
             <h3>Texas Ranger 2023</h3>
             <strong class="price"><del>$80.000</del>$70.000</strong> 
@@ -47,8 +54,8 @@
 
     <a href="#" class="col-tb-6 col-pc-4 product-box img_doble">
         <!-- <img src="img/t-shiert/t4.jpeg" alt="t-shiert" width="100%"> -->
-        <img id="top" src="img/t-shiert/t4.jpeg" width="100%"/>
-        <img src="img/t-shiert/t4_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t4.jpeg" width="100%"/>
+        <img src="img/t-shirt/t4_r.jpeg" width="100%" />
         <div class="hidden off">OFERTA</div>
             <h3>Texas Ranger 2023</h3>
             <strong class="price">$55.000</strong> 
@@ -56,8 +63,8 @@
 
     <a href="#" class="col-tb-6 col-pc-4 product-box img_doble">
         <!-- <img src="img/t-shiert/t5.jpeg" alt="t-shiert" width="100%"> -->
-        <img id="top" src="img/t-shiert/t5.jpeg" width="100%"/>
-        <img src="img/t-shiert/t5_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t5.jpeg" width="100%"/>
+        <img src="img/t-shirt/t5_r.jpeg" width="100%" />
         <div class="hidden off">OFERTA</div>
             <h3>Toronto Blue Jays 2023</h3>
             <strong class="price">$50.000</strong> 
@@ -65,8 +72,8 @@
 
     <a href="#" class="col-tb-6 col-pc-4 product-box img_doble">
         <!-- <img src="img/t-shiert/t6.jpeg" alt="t-shiert" width="100%"> -->
-        <img id="top" src="img/t-shiert/t6.jpeg" width="100%"/>
-        <img src="img/t-shiert/t6_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t6.jpeg" width="100%"/>
+        <img src="img/t-shirt/t6_r.jpeg" width="100%" />
         <div class="off hidden">OFERTA</div>
             <h3>Miami Marlins 2023</h3>
             <strong class="price">$50.000</strong> 
@@ -74,8 +81,8 @@
 
     <a href="#" class="col-tb-6 col-pc-4 product-box img_doble">
         <!-- <img src="img/t-shiert/t7.jpeg" alt="t-shiert" width="100%"> -->
-        <img id="top" src="img/t-shiert/t7.jpeg" width="100%"/>
-        <img src="img/t-shiert/t7_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t7.jpeg" width="100%"/>
+        <img src="img/t-shirt/t7_r.jpeg" width="100%" />
         <div class="hidden off">OFERTA</div>
             <h3>Toronto Blue Jays 2023</h3>
             <strong class="price">$50.000</strong> 
@@ -83,8 +90,8 @@
 
     <a href="#" class="col-tb-6 col-pc-4 product-box img_doble">
         <!-- <img src="img/t-shiert/t8.jpeg" alt="t-shiert" width="100%"> -->
-        <img id="top" src="img/t-shiert/t8.jpeg" width="100%"/>
-        <img src="img/t-shiert/t8_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t8.jpeg" width="100%"/>
+        <img src="img/t-shirt/t8_r.jpeg" width="100%" />
         <div class="hidden off">OFERTA</div>
             <h3>Baltimore Orioles 2023</h3>
             <strong class="price">$50.000</strong> 
@@ -92,60 +99,18 @@
 
     <a href="#" class="col-tb-6 col-pc-4 product-box img_doble">
         <!-- <img src="img/t-shiert/t9.jpeg" alt="t-shiert" width="100%"> -->
-        <img id="top" src="img/t-shiert/t9.jpeg" width="100%"/>
-        <img src="img/t-shiert/t9_r.jpeg" width="100%" />
+        <img class="top" src="img/t-shirt/t9.jpeg" width="100%"/>
+        <img src="img/t-shirt/t9_r.jpeg" width="100%" />
         <div class="off">OFERTA</div>
             <h3>Miami Marlins 2023</h3>
             <strong class="price"><del>$80.000</del>$150.000</strong> 
     </a>
-
-    <!-- <div class="contenedor">
-        <img src="img/t-shiert/t9.jpeg" />
-        <img class="top" src="img/t-shiert/t8.jpeg" />
-    </div> -->
-
-     <!--<a href="#" class="col-tb-6 col-pc-4 product-box">
-        <img src="img/t-shiert/t9.jpeg" alt="t-shiert" width="100%">
-        <div class="hidden off">OFERTA</div>
-            <h3>Baseball 00</h3>
-            <strong class="price">$50.000</strong> 
-    </a>
-
-   <a href="#" class="col-tb-6 col-pc-4 product-box">
-        <img src="img/t-shiert/j12.jpeg" alt="t-shiert" width="100%">
-        <div class="hidden off">OFERTA</div>
-            <h3>Baseball 00</h3>
-            <strong class="price">$50.000</strong> 
-    </a>
-
-    <a href="#" class="col-tb-6 col-pc-4 product-box">
-        <img src="img/t-shiert/j13.jpeg" alt="t-shiert" width="100%">
-        <div class="hidden off">OFERTA</div>
-            <h3>Baseball 00</h3>
-            <strong class="price">$50.000</strong> 
-    </a>
-
-    <a href="#" class="col-tb-6 col-pc-4 product-box">
-        <img src="img/t-shiert/j14.jpeg" alt="t-shiert" width="100%">
-        <div class="hidden off">OFERTA</div>
-            <h3>Baseball 00</h3>
-            <strong class="price">$50.000</strong> 
-    </a>
-
-    <a href="#" class="col-tb-6 col-pc-4 product-box">
-        <img src="img/t-shiert/j15.jpeg" alt="t-shiert" width="100%">
-        <div class="hidden off">OFERTA</div>
-            <h3>Baseball 00</h3>
-            <strong class="price">$50.000</strong> 
-    </a> -->
-
-   
 </div>
 
-
+<!-- Esta parte se realiza para ir pasanado de una pagina a otra en la seccion -->
 <ul class="pagi">
-    <li><a href="t-shiert.html" class="active">1</a></li>
-    <li><a href="t-shiert-2.html">2</a></li>
+    <li><a href="t-shirt.html">1</a></li>
+    <li><a href="t-shirt-2.html"  class="active">2</a></li>
     <li><a href="#">3</a></li>
     <li><a href="#">...</a></li>
     <li><a href="#">10</a></li>
