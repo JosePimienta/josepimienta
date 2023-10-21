@@ -32,7 +32,10 @@
 .caja{    
     float: right;
     font-size: 14px;
+    border: 0;
+    cursor: pointer;
     /* border: 1px solid blue; */
+    padding: 10px;
     width: 30%;
     text-align: left;
     font-family: 'Merriweather', serif;
@@ -45,25 +48,33 @@
     margin-bottom: 0px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
+    /* border: 1px solid #081837; */
     /* height: 40px; */
     border-radius: 2px;
     /* background-color: orange; */
 }
 
+.m_select:hover{
+    background-color: #37082d;
+}
+
+.m_select:checked{
+    background-color: #6c6d6e5f;
+}
+
+/* 
 .m_select::after{
     content: '\1401';
     top: 0;
     right: 0;
     float: right;
     cursor: pointer;
-}
+} */
 
 
 /* opciones interactivas del select. */
-.sel{
-    display: none; /* para que no salgan las opciones si no hasta que se oprima en la caja */
-    position: absolute; /* posicion fija en la pantalla */
-    z-index: 1;/* mostrar siempre sobre todo lo demas */
+/* .sel{
+    z-index: 1;
     list-style: none;
     padding: 0;
     background-color: rgb(255, 255, 255);
@@ -71,6 +82,10 @@
     border-radius: 2px;
     box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.75);
     border: 1px solid rgba(0, 0, 0, 0.614);
+}
+
+.sel.show{
+    display: block;
 }
 
 .sel li{
@@ -95,7 +110,7 @@
 
 .m::after{
     content: '\1403';
-}
+} */
 
 /* caja que contiene todos los productos */
 .product-box{

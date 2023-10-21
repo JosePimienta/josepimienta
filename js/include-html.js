@@ -24,7 +24,6 @@ function includeHTML() {
         return;
       }
     }
-  };
-  includeHTML();
-
-  
+  }
+  includeHTML(); 
+console.log("include");
